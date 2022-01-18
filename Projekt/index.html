@@ -1,0 +1,192 @@
+<!DOCTYPE HTML>
+<html lang="hr">
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+		<meta name="author" content="">
+    <link rel="icon" type="image/x-icon" href="/img/meetMia.ico">
+
+		<title>MeetMia</title>
+
+		<link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4351b7ed3f.js" crossorigin="anonymous"></script>
+
+
+	</head>
+	<body>
+    <!--NAVIGACIJA-->
+    <header>
+
+      <nav>
+          <ul class="navLink">
+              <li id="proizvodi"><a href="#O nama" >Proizvodi</a></li>
+              <li id="onama"><a class="hover-underline-animation"href="#O nama" >O nama</a></li>
+              <li id="novosti"><a href="#Novosti" >Novosti</a></li>
+              <li id="logo" onclick="location.href = 'index.html'"><img src="img/meetMia.png" alt="logo" ></li>
+              <li id="kontakt"><a href="kontakt.html" >Kontakt</a></li>
+              <li id="kosarica"><a href="narudzba.html" >Košarica <i id="hide" class="fas fa-shopping-cart"></i></a></li>
+              <li id="shoppingCart" onclick="location.href = 'narudzba.html'"><img id="cart" src="img/cart.png" alt="shopping cart"> </li>
+          </ul>
+        </nav>
+
+  </header>
+  <!--NAVIGACIJA-->
+
+
+
+  <!--PONUDA-->
+      <div class="container-fluid pocetno">
+      <div class="row ponuda">
+        <div class="col-md kolona" id="torte">
+          <img class="triSlike" id="torteSlika" src="img/torte.png">
+          <button id="torteBtn" class="btn btn-outline-dark">Torte</button>
+        </div>
+        <div class="col-md kolona" id="slatko">
+          <img class="triSlike" id="slatkoSlika" src="img/slatko.png">
+          <button id="slatkoBtn" class="btn btn-outline-dark">Slatko</button>
+        </div>
+        <div class="col-md kolona" id="slano">
+          <img class="triSlike" id="slanoSlika" src="img/slano.png">
+          <button id="slanoBtn" class="btn btn-outline-dark">Slano</button>
+        </div>
+      </div>
+    </div>
+<!--PONUDA-->
+<hr>
+<!--NAJPRODAVANIJE-->
+
+    <h2 id="najprodavanijeNaslov">Najprodavanije iz naše ponude</h2>
+
+
+    <div class="container-flex najprodavanije ">
+      <div class="row najprodavanijeRow">
+        <div class="col-xl najprodavanijiKolone box">
+            <div class="najprodavanijiProizvod">
+                <img src="img/najprod (3).png">
+              </div>
+                <div class="ispodSlike">
+                  <h3>Naziv proizvoda</h3>
+                  <p class="cijena">10,00 kn</p>
+              
+            </div>
+        </div>
+        <div class="col-xl najprodavanijiKolone box">
+          <div class="najprodavanijiProizvod">
+            <img src="img/najprod (2).png">
+          </div>
+            <div class="ispodSlike">
+                <h3>Naziv proizvoda</h3>
+                <p class="cijena">20,00 kn</p>
+          </div>
+        </div>
+        <div class="col-xl najprodavanijiKolone box">
+          <div class="najprodavanijiProizvod">
+            <img src="img/najprod (1).png">
+          </div>
+            <div class="ispodSlike">
+              <h3>Naziv proizvoda</h3>
+              <p class="cijena">25,00 kn</p>
+          </div>
+        </div>
+      </div>
+    </div>
+<!--NAJPRODAVANIJE-->
+
+
+<!--O NAMA-->
+<br>
+
+<br>
+<div class="container-fluid onamaWrapper">
+  <div class="row onamaRow">
+    <div class="col-xl onamaContainer">
+      <img src="img/onama.png" id="onamaImg">
+    </div>
+    <div class="col-xl onamaTekst">
+      <h2>O nama</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eleifend sit amet mauris quis condimentum. Ut eu sagittis sapien. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec sollicitudin odio vitae erat placerat pretium. Nulla felis sem, lobortis non posuere in, convallis eu urna.
+        Cras sem arcu, semper vel tellus cursus, porta lacinia justo. Praesent lobortis sagittis hendrerit. Duis sit amet dui imperdiet, luctus mi nec, pellentesque mauris. Phasellus tincidunt dolor ut purus luctus pellentesque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id quam ac est posuere molestie. Curabitur at nulla id mi ultrices scelerisque id quis arcu. Praesent quis porta turpis. Etiam lectus libero, facilisis quis tempus nec, malesuada id massa. Aliquam sed massa ipsum.</p>
+      </div>
+
+  </div>
+</div>
+<!--O NAMA-->
+<br>
+
+<footer style="background-color: #AE8686;">
+    
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    <p style="font-size: 17px; text-decoration:underline;">Posjetite naše društvene mreže:</p>
+    <i class="fab fa-facebook-square"></i>
+    <i class="fab fa-instagram"></i>
+    <i class="fab fa-twitter-square"></i>
+    <i class="fab fa-linkedin"></i>
+  </div>
+<div class="container p-4">
+  <div class="row">
+    <div class="col-lg-6 col-md-12 mb-4">
+      <h5 class="mb-3" style="letter-spacing: 2px; color: #f0f0f0; text-decoration: underline;">Kako do nas</h5>
+      <div class="mapouter"><div class="gmap_canvas"><iframe width="400" height="220" id="gmap_canvas" src="https://maps.google.com/maps?q=meetmia&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://fmovies-online.net"></a><br><style>.mapouter{position:relative;text-align:right;height:220px;width:400px;}</style><a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:220px;width:400px;}</style></div></div>      
+    </div>
+    <div class="col-lg-3 col-md-6 mb-4">
+      <h5 class="mb-3" style="letter-spacing: 2px; color: #f0f0f0; text-decoration: underline;">Korisne poveznice</h5>
+      <ul class="list-unstyled mb-0 listaFooter">
+        <li class="mb-1 radno">
+          <a href="#!" style="color: #f0f0f0;">FAQ</a>
+        </li>
+        <li class="mb-1 radno">
+          <a href="#!" style="color: #f0f0f0;">Dostava</a>
+        </li>
+        <li class="mb-1 radno">
+          <a href="#!" style="color: #f0f0f0;">Cijene</a>
+        </li>
+        <li class="mb-1 radno">
+          <a href="#!" style="color: #f0f0f0;">Pravila Korištenja</a>
+        </li>
+        <li class="mb-1 radno">
+          <a href="#!" style="color: #f0f0f0;">Postavke Kolačića</a>
+        </li>
+        <li class="mb-1 radno">
+          <a href="#!" style="color: #f0f0f0;">Kontakt</a>
+        </li>
+        <li class="mb-1 radno">
+          <a href="#!" style="color: #f0f0f0;">Lokacije</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-lg-3 col-md-6 mb-4">
+      <h5 class="mb-1 radno" style="letter-spacing: 2px; color: #f0f0f0;">Radno vrijeme</h5>
+      <table class="table" style="color: #f0f0f0; border-color: #666;">
+        <tbody>
+          <tr>
+            <td>Pon - Pet:</td>
+            <td>8:00 - 21:00</td>
+          </tr>
+          <tr>
+            <td>Sub - Ned:</td>
+            <td>10:00 - 18:00</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+  © 2020 Copyright:
+  <a class="text-dark" href="#">MeetMia.com</a>
+</div>
+<!-- Copyright -->
+</footer>
+
+<!--FOOTER-->
+
+
+
+	</body>
+</html>

@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="hr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="icon" type="image/x-icon" href="/img/meetMia.ico">
+
+    <link href="css/styleNarudzba.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4351b7ed3f.js" crossorigin="anonymous"></script>
+    <title>MeetMia - Narudžba</title>
+    <script src="js/validator.js"></script>
+  </head>
+  <body>
+        <!--NAVIGACIJA-->
+        <header>
+
+          <nav>
+              <ul class="navLink">
+                  <li id="proizvodi"><a href="#O nama" >Proizvodi</a></li>
+                  <li id="onama"><a class="hover-underline-animation"href="#O nama" >O nama</a></li>
+                  <li id="novosti"><a href="#Novosti" >Novosti</a></li>
+                  <li id="logo" onclick="location.href = 'index.html'"><img src="img/meetMia.png" alt="logo" ></li>
+                  <li id="kontakt"><a href="kontakt.html" >Kontakt</a></li>
+                  <li id="kosarica"><a href="narudzba.html" >Košarica <i id="hide" class="fas fa-shopping-cart"></i></a></li>
+                  <li id="shoppingCart" onclick="location.href = 'narudzba.html'"><img id="cart" src="img/cart.png" alt="shopping cart"> </li>
+              </ul>
+            </nav>
+    
+      </header>
+  <!--NAVIGACIJA-->
+
+  <div class="container pozadina">
+   <br>
+   <br>
+    <div class="row">
+        <div class="col-md-4 order-md-2 mb-4">
+            <h4 class="d-flex justify-content-between align-items-center mb-3">
+                <span class="text-muted">Vaša košarica</span>
+                <span class="badge badge-secondary badge-pill">3</span>
+            </h4>
+            <ul class="list-group mb-3">
+                <li class="list-group-item d-flex justify-content-between lh-condensed">
+                    <div>
+                        <h6 class="my-0">Vege Wrap</h6>
+                        <small class="text-muted">Slasni wrap od samo vege sastojaka</small>
+                    </div>
+                    <span class="text-muted">20kn</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between lh-condensed">
+                    <div>
+                        <h6 class="my-0">Bagel Losos</h6>
+                        <small class="text-muted">Domaće bagel pecivo sa sirnim namazom, rikulom i dimljenim lososom</small>
+                    </div>
+                    <span class="text-muted">15kn</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between lh-condensed">
+                    <div>
+                        <h6 class="my-0">Croissant čokolada</h6>
+                        <small class="text-muted">Croissant s čokoladnim ganacheom</small>
+                    </div>
+                    <span class="text-muted">7kn</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between bg-light">
+                    <div class="text-success">
+                        <h6 class="my-0">Promotivni kod</h6>
+                        <small>POPUST20</small>
+                    </div>
+                    <span class="text-success">-20kn</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between">
+                    <span>Ukupno (HRK)</span>
+                    <strong>22kn</strong>
+                </li>
+            </ul>
+            <form class="card p-2">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Promotivni kod">
+                    <div class="input-group-append">
+                        <button type="submit" class="btn btn-secondary">Iskoristi</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-8 order-md-1">
+            <h4 class="mb-3">Podaci</h4>
+            <form class="needs-validation" novalidate="">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="firstName">Ime</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                        <div class="invalid-feedback"> Molimo Vas unesite Vaše ime. </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="lastName">Prezime</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                        <div class="invalid-feedback"> Molimo Vas unesite Vaše prezime. </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="email">E-mail</label>
+                    <input type="email" class="form-control" id="email" required="" >
+                    <div class="invalid-feedback"> Molimo Vas unesite svoju E-mail adresu. </div>
+                </div>
+                <div class="mb-3">
+                    <label for="address">Adresa dostave</label>
+                    <input type="text" class="form-control" id="address"  required="">
+                    <div class="invalid-feedback"> Molimo Vas unesite adresu dostave. </div>
+                </div>
+                <div class="mb-3">
+                    <label for="address2">Adresa 2 <span class="text-muted">(Neobavezno)</span></label>
+                    <input type="text" class="form-control" id="address2" >
+                </div>
+                <div class="row">
+                    <div class="col-md-5 mb-3">
+                        <label for="country">Županija</label>
+                        <select class="custom-select d-block w-100" id="country" required="">
+                            <option value="">Odaberite...</option>
+                            <option>Grad Zagreb</option>
+                            <option>Zagrebačka</option>
+                        </select>
+                        <div class="invalid-feedback">Molimo Vas odaberite županiju u kojoj se nalazite. </div>
+                    </div>
+
+                    <div class="col-md-3 mb-3">
+                        <label for="zip">Poštanski broj</label>
+                        <input type="text" class="form-control" id="zip" placeholder="" required="">
+                        <div class="invalid-feedback"> Molimo Vas unesite poštanski broj.</div>
+                    </div>
+                </div>
+                <hr class="mb-4">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="save-info">
+                    <label class="custom-control-label" for="save-info">Spremi ove informacije za buduće narudžbe</label>
+                </div>
+                <hr class="mb-4">
+                <h4 class="mb-3">Mogućnosti dostave</h4>
+                <div class="d-block my-3">
+                    <div class="custom-control custom-radio">
+                        <input id="dostava" name="dostava" type="radio" class="custom-control-input" checked="" required="">
+                        <label class="custom-control-label" for="dostava">Dostava na adresu</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input id="osobno" name="dostava" type="radio" class="custom-control-input" required="">
+                        <label class="custom-control-label" for="osobno">Osobno preuzimanje (Vlaška ul. 43, 10000, Zagreb)</label>
+                    </div>
+                </div>
+                <hr class="mb-4">
+                <h4 class="mb-3">Način plaćanja</h4>
+                <div class="d-block my-3">
+                    <div class="custom-control custom-radio">
+                        <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked="" required="">
+                        <label class="custom-control-label" for="credit">Kreditna kartica</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required="">
+                        <label class="custom-control-label" for="paypal">PayPal</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                      <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required="">
+                      <label class="custom-control-label" for="debit">Plaćanje pouzećem</label>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="cc-name">Vlasnik kartice</label>
+                        <input type="text" class="form-control" id="cc-name" placeholder="" required="">
+                        <small class="text-muted">Ime na koje glasi kartica</small>
+                        <div class="invalid-feedback"> Ime na kartici je obavezno. </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="cc-number">Broj kreditne kartice</label>
+                        <input type="text" class="form-control" id="cc-number" placeholder="" required="">
+                        <div class="invalid-feedback"> Broj kreditne kartice je obavezan. </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 mb-3">
+                        <label for="cc-expiration">Datum isteka</label>
+                        <input type="text" class="form-control" id="cc-expiration" placeholder="" required="">
+                        <div class="invalid-feedback"> Datum isteka kartice je obavezan. </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="cc-cvv">CVV</label>
+                        <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
+                        <div class="invalid-feedback"> Sigurnosni kod je obavezan. </div>
+                    </div>
+                </div>
+                <hr class="mb-4">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="uvjeti" required="">
+                    <label class="custom-control-label" for="uvjeti">Prihvaćam uvjete poslovanja i suglasan/a sam za korištenje mojih osobnih podataka</label>
+                    <div class="invalid-feedback"> Prihvaćanje uvjeta poslovanja i uvjeta korištenja su nužna za nastavak. </div>
+                </div>
+                <hr class="mb-4">
+                <button class="btn btn-primary btn-lg btn-block checkout" type="submit">Nastavite na plaćanje</button>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+<br>
+<br>
+<br>
+
+  <!--FOOTER-->
+
+
+  <footer style="background-color: #AE8686;">
+    
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      <p style="font-size: 17px; text-decoration:underline;">Posjetite naše društvene mreže:</p>
+      <i class="fab fa-facebook-square"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-twitter-square"></i>
+      <i class="fab fa-linkedin"></i>
+    </div>
+  <div class="container p-4">
+    <div class="row">
+      <div class="col-lg-6 col-md-12 mb-4">
+        <h5 class="mb-3" style="letter-spacing: 2px; color: #f0f0f0; text-decoration: underline;">Kako do nas</h5>
+        <div class="mapouter"><div class="gmap_canvas"><iframe width="400" height="220" id="gmap_canvas" src="https://maps.google.com/maps?q=meetmia&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://fmovies-online.net"></a><br><style>.mapouter{position:relative;text-align:right;height:220px;width:400px;}</style><a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:220px;width:400px;}</style></div></div>      
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5 class="mb-3" style="letter-spacing: 2px; color: #f0f0f0; text-decoration: underline;">Korisne poveznice</h5>
+        <ul class="list-unstyled mb-0 listaFooter">
+          <li class="mb-1 radno">
+            <a href="#!" style="color: #f0f0f0;">FAQ</a>
+          </li>
+          <li class="mb-1 radno">
+            <a href="#!" style="color: #f0f0f0;">Dostava</a>
+          </li>
+          <li class="mb-1 radno">
+            <a href="#!" style="color: #f0f0f0;">Cijene</a>
+          </li>
+          <li class="mb-1 radno">
+            <a href="#!" style="color: #f0f0f0;">Pravila Korištenja</a>
+          </li>
+          <li class="mb-1 radno">
+            <a href="#!" style="color: #f0f0f0;">Postavke Kolačića</a>
+          </li>
+          <li class="mb-1 radno">
+            <a href="#!" style="color: #f0f0f0;">Kontakt</a>
+          </li>
+          <li class="mb-1 radno">
+            <a href="#!" style="color: #f0f0f0;">Lokacije</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5 class="mb-1 radno" style="letter-spacing: 2px; color: #f0f0f0;">Radno vrijeme</h5>
+        <table class="table" style="color: #f0f0f0; border-color: #666;">
+          <tbody>
+            <tr>
+              <td>Pon - Pet:</td>
+              <td>8:00 - 21:00</td>
+            </tr>
+            <tr>
+              <td>Sub - Ned:</td>
+              <td>10:00 - 18:00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2020 Copyright:
+    <a class="text-dark" href="#">MeetMia.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+<!--FOOTER-->
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
