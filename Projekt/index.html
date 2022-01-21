@@ -17,6 +17,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/4351b7ed3f.js" crossorigin="anonymous"></script>
 
+    <link type="text/css" rel="stylesheet" href="css/lightslider.css" />
+    <script src="js/jquery.js"></script>
+    <script src="js/lightslider.js"></script>
 
 	</head>
 	<body>
@@ -24,11 +27,11 @@
     <header>
 
       <nav>
-          <ul class="navLink">
+          <ul class="navLink" id="myTopnav">
               <li id="proizvodi"><a href="#O nama" >Proizvodi</a></li>
               <li id="onama"><a class="hover-underline-animation"href="#O nama" >O nama</a></li>
-              <li id="novosti"><a href="#Novosti" >Novosti</a></li>
-              <li id="logo" onclick="location.href = 'index.html'"><img src="img/meetMia.png" alt="logo" ></li>
+              <li id="blog"><a href="#Novosti" >Novosti</a></li>
+              <li id="logo" onclick="location.href = 'index.html'"><img id="logoImg" src="img/meetMia.png" alt="logo" ></li>
               <li id="kontakt"><a href="kontakt.html" >Kontakt</a></li>
               <li id="kosarica"><a href="narudzba.html" >Košarica <i id="hide" class="fas fa-shopping-cart"></i></a></li>
               <li id="shoppingCart" onclick="location.href = 'narudzba.html'"><img id="cart" src="img/cart.png" alt="shopping cart"> </li>
@@ -39,21 +42,30 @@
   <!--NAVIGACIJA-->
 
 
-
   <!--PONUDA-->
       <div class="container-fluid pocetno">
       <div class="row ponuda">
-        <div class="col-md kolona" id="torte">
-          <img class="triSlike" id="torteSlika" src="img/torte.png">
-          <button id="torteBtn" class="btn btn-outline-dark">Torte</button>
+        <div class="col-lg-4 kolona col-md-12  text-center" id="torte">
+          <picture class="slikeWide">
+            <source media="(max-width:992px)" srcset="img/torteWide.png" >
+            <img class="triSlike img-fluid" id="torteSlika" src="img/torte.png">
+          </picture>
+          <a>Torte</a>
         </div>
-        <div class="col-md kolona" id="slatko">
-          <img class="triSlike" id="slatkoSlika" src="img/slatko.png">
-          <button id="slatkoBtn" class="btn btn-outline-dark">Slatko</button>
+        <div class="col-lg-4 kolona col-md-12  text-center" id="slatko">
+
+          <picture class="slikeWide">
+            <source media="(max-width:992px)" srcset="img/slatkoWide.png" >
+            <img class="triSlike img-fluid" id="slatkoSlika" src="img/slatko.png">
+          </picture>
+          <a>Slatko</a>
         </div>
-        <div class="col-md kolona" id="slano">
-          <img class="triSlike" id="slanoSlika" src="img/slano.png">
-          <button id="slanoBtn" class="btn btn-outline-dark">Slano</button>
+        <div class="col-lg-4 kolona col-md-12 text-center" id="slano">
+          <picture class="slikeWide">
+            <source media="(max-width:992px)" srcset="img/slanoWide.png" class="wide">
+            <img class="triSlike img-fluid" id="slanoSlika" src="img/slano.png">
+          </picture>
+          <a>Slano</a>
         </div>
       </div>
     </div>
@@ -61,59 +73,103 @@
 <hr>
 <!--NAJPRODAVANIJE-->
 
-    <h2 id="najprodavanijeNaslov">Najprodavanije iz naše ponude</h2>
+    <h3 id="najprodavanijeNaslov">Najprodavanije iz naše ponude</h3>
 
+    <div class="container-fluid najprodavanije">
+    <ul id="light-slider">
+      <li>
+        <div class="kartica">
+          <div class="najprodavanijiSlika">
+            <img src="img/proizvodi/najprod1.png">
+        </div>
+          <h3>Čokoladni tiramisu</h3>
+          <p>15,00kn</p>
+        </div>
+      </li>
+      <li>
+        <div class="kartica">
+          <div class="najprodavanijiSlika">
+            <img src="img/proizvodi/najprod2.png">
+        </div>
+          <h3>Croissant marelica</h3>
+          <p>20,00kn</p>
+        </div>
+      </li>
+      </li>
 
-    <div class="container-flex najprodavanije ">
-      <div class="row najprodavanijeRow">
-        <div class="col-xl najprodavanijiKolone box">
-            <div class="najprodavanijiProizvod">
-                <img src="img/najprod (3).png">
-              </div>
-                <div class="ispodSlike">
-                  <h3>Naziv proizvoda</h3>
-                  <p class="cijena">10,00 kn</p>
-              
-            </div>
+      <li>
+        <div class="kartica">
+          <div class="najprodavanijiSlika">
+              <img src="img/proizvodi/najprod3.jpg">
         </div>
-        <div class="col-xl najprodavanijiKolone box">
-          <div class="najprodavanijiProizvod">
-            <img src="img/najprod (2).png">
-          </div>
-            <div class="ispodSlike">
-                <h3>Naziv proizvoda</h3>
-                <p class="cijena">20,00 kn</p>
-          </div>
+          <h3>Croissant pistacija</h3>
+          <p>22,00kn</p>
         </div>
-        <div class="col-xl najprodavanijiKolone box">
-          <div class="najprodavanijiProizvod">
-            <img src="img/najprod (1).png">
-          </div>
-            <div class="ispodSlike">
-              <h3>Naziv proizvoda</h3>
-              <p class="cijena">25,00 kn</p>
-          </div>
-        </div>
+      </li>
+    </li>
+
+    <li>
+      <div class="kartica">
+        <div class="najprodavanijiSlika">
+          <img src="img/proizvodi/najprod4.png">
       </div>
-    </div>
-<!--NAJPRODAVANIJE-->
+        <h3>Queen Niki</h3>
+        <p>25,00kn</p>
+      </div>
+    </li>
+  </li>
 
+  <li>
+    <div class="kartica">
+      <div class="najprodavanijiSlika">
+        <img src="img/proizvodi/najprod5.png">
+    </div>
+      <h3>Karamel eclair</h3>
+      <p>15,00kn</p>
+    </div>
+  </li>>
+</li>
+<li>
+  <div class="kartica">
+    <div class="najprodavanijiSlika">
+      <img src="img/proizvodi/najprod6.png">
+  </div>
+    <h3>Ruby eclair</h3>
+    <p>12,00kn</p>
+  </div>
+</li>>
+</li>
+      
+  </ul>
+  <script type="text/javascript">
+    $(document).ready(function() {
+        $("#light-slider").lightSlider();
+    });
+    </script>
+    </div>
+
+<!--NAJPRODAVANIJE-->
+<hr>
 
 <!--O NAMA-->
 <br>
-
-<br>
-<div class="container-fluid onamaWrapper">
-  <div class="row onamaRow">
-    <div class="col-xl onamaContainer">
-      <img src="img/onama.png" id="onamaImg">
+<div class="container-fluid onamaWrap">
+  <div class="row">
+    <div class="col-lg-6">
+      <img class="img-fluid" id="onamaSlika" src="img/meet-mia.jpg">
     </div>
-    <div class="col-xl onamaTekst">
-      <h2>O nama</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eleifend sit amet mauris quis condimentum. Ut eu sagittis sapien. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec sollicitudin odio vitae erat placerat pretium. Nulla felis sem, lobortis non posuere in, convallis eu urna.
-        Cras sem arcu, semper vel tellus cursus, porta lacinia justo. Praesent lobortis sagittis hendrerit. Duis sit amet dui imperdiet, luctus mi nec, pellentesque mauris. Phasellus tincidunt dolor ut purus luctus pellentesque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id quam ac est posuere molestie. Curabitur at nulla id mi ultrices scelerisque id quis arcu. Praesent quis porta turpis. Etiam lectus libero, facilisis quis tempus nec, malesuada id massa. Aliquam sed massa ipsum.</p>
-      </div>
 
+    <div class="col-lg-6">
+      <h2>O nama</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vulputate tempus augue, eget finibus arcu condimentum semper. Etiam egestas tempus bibendum. Nullam pharetra sollicitudin dolor, ut lobortis ante consectetur ac. 
+        Proin viverra elit eros, eget iaculis urna sollicitudin nec.
+        Suspendisse elementum vulputate malesuada. Integer vel dapibus nibh. 
+        Etiam et eros nec quam laoreet fringilla eget nec nulla.
+        Suspendisse sem magna, gravida id vulputate vitae, finibus et ex.
+        Quisque auctor ligula vel ullamcorper maximus. Aenean vel accumsan velit. 
+        Integer et tempor diam. Aliquam blandit risus vitae ante rhoncus, 
+        vel molestie sapien fermentum.</p>
+    </div>
   </div>
 </div>
 <!--O NAMA-->
@@ -132,7 +188,7 @@
   <div class="row">
     <div class="col-lg-6 col-md-12 mb-4">
       <h5 class="mb-3" style="letter-spacing: 2px; color: #f0f0f0; text-decoration: underline;">Kako do nas</h5>
-      <div class="mapouter"><div class="gmap_canvas"><iframe width="400" height="220" id="gmap_canvas" src="https://maps.google.com/maps?q=meetmia&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://fmovies-online.net"></a><br><style>.mapouter{position:relative;text-align:right;height:220px;width:400px;}</style><a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:220px;width:400px;}</style></div></div>      
+      <iframe class="karta" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11123.457405351553!2d15.9826091!3d45.813975!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb6953cf0242e83ff!2sMeet%20Mia!5e0!3m2!1shr!2shr!4v1642530722385!5m2!1shr!2shr" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
     <div class="col-lg-3 col-md-6 mb-4">
       <h5 class="mb-3" style="letter-spacing: 2px; color: #f0f0f0; text-decoration: underline;">Korisne poveznice</h5>
@@ -178,7 +234,7 @@
   </div>
 </div>
 <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-  © 2020 Copyright:
+  © 2022 Copyright:
   <a class="text-dark" href="#">MeetMia.com</a>
 </div>
 <!-- Copyright -->
