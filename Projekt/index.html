@@ -26,10 +26,10 @@
     <!--NAVIGACIJA-->
     <header>
 
-      <nav>
+      <nav class="desktopNav">
           <ul class="navLink" id="myTopnav">
-              <li id="proizvodi"><a href="#O nama" >Proizvodi</a></li>
-              <li id="onama"><a class="hover-underline-animation"href="#O nama" >O nama</a></li>
+              <li id="proizvodi"><a href="proizvodi.html" >Proizvodi</a></li>
+              <li id="onama"><a href="#O nama" >O nama</a></li>
               <li id="blog"><a href="#Novosti" >Novosti</a></li>
               <li id="logo" onclick="location.href = 'index.html'"><img id="logoImg" src="img/meetMia.png" alt="logo" ></li>
               <li id="kontakt"><a href="kontakt.html" >Kontakt</a></li>
@@ -38,14 +38,51 @@
           </ul>
         </nav>
 
+
+
   </header>
+
+  
+  <main class="mobileNav">
+    <div id="overlay">
+      <a href="#">Link1</a>
+      <a href="#">Link2</a>
+      <a href="#">Link3</a>
+      <a href="#">Link4</a>
+    </div>
+    <div class="nav">
+      <div class="logo1" onclick="location.href = 'index.html'" ></div>
+      <div id="hamburger" class="indeks">
+        <div class="indeks"></div>
+      </div>
+      
+    </div>
+  </main>
+  <script>(() => {
+    const hamburger = document.getElementById("hamburger");
+    const menu = document.getElementById("overlay");
+    let open = false;
+  
+    const change = () => {
+      if (!open) {
+        hamburger.classList.add("open");
+        menu.classList.add("menu");
+      } else {
+        hamburger.classList.remove("open");
+        menu.classList.remove("menu");
+      }
+      open = !open;
+    };
+  
+    hamburger.addEventListener("click", change);
+  })();</script>
   <!--NAVIGACIJA-->
 
 
   <!--PONUDA-->
       <div class="container-fluid pocetno">
       <div class="row ponuda">
-        <div class="col-lg-4 kolona col-md-12  text-center" id="torte">
+        <div class="col-lg-4 kolona col-md-12 text-center" id="torte">
           <picture class="slikeWide">
             <source media="(max-width:992px)" srcset="img/torteWide.png" >
             <img class="triSlike img-fluid" id="torteSlika" src="img/torte.png">
@@ -241,8 +278,6 @@
 </footer>
 
 <!--FOOTER-->
-
-
 
 	</body>
 </html>

@@ -1,0 +1,278 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+
+
+
+/*----------------------------------------------------*/
+#torteSlika{
+	padding-right: 1%;
+}
+#slatkoSlika{
+	padding-right: 1%;
+}
+#logoImg,#cart{
+	height:105px;
+	cursor: pointer;
+	vertical-align: bottom !important;
+}
+#cart{
+	transition: 0.4s;
+}
+#cart:hover{
+	opacity: 0.5;
+}
+#logo{
+	padding:10px;
+}
+.onamaWrap{
+	width:80% !important;
+}
+
+*{
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+
+}
+#proizvodi,#onama,#logo,#kontakt,#blog,#kosarica,#shoppingCart{
+    width: 185px;
+    text-align: center;
+}
+nav{
+	margin:0 auto;
+}
+
+#cart{
+	height: 45px;
+	margin-left: 20px;
+	margin-top: 25px;
+}
+header{
+	background-color:#8F5151 ;
+	display:flex !important; 
+	justify-content: left !important;
+	align-items: stretch !important;
+}
+ul{
+	margin-bottom: 0;
+}
+.navLink li{
+	font-size:30px;
+	text-decoration: none !important;
+	color:#F9FFFF !important;
+} 
+li a {
+	font-size:30px;
+	text-decoration: none !important;
+	color:#F9FFFF !important;
+}
+
+.navLink{
+	list-style: none;
+	margin:0 auto;
+}
+.navLink li,button{
+	display:inline-block;
+}
+
+.navLink li a{
+	transition: all 0.3s ease 0s;
+	border-bottom: 2px solid transparent;
+}
+
+.navLink li a:hover{
+	border-color:#dabcbc ;
+}
+#cart{
+	margin-bottom:15px;
+}
+
+
+
+#najprodavanijeNaslov{
+	margin-top:20px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.radno a {
+	padding: 0;
+	font-size: 15px;
+}
+.listaFooter li{
+	padding:0;
+	font-size:15px;
+}
+footer{
+	background-color:#AE8686 !important;
+}
+.fab{
+	font-size: 45px;
+	padding:20px;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+nav ul{
+	padding-left: 0px !important;
+}
+
+#logoImg{
+	transition:0.4s
+}
+#logoImg:hover{
+	opacity:0.7;
+} 
+.mobileNav{
+	display: none;
+}
+.proizvodSlika img{
+    width:100%;
+}
+.proizvodiWrapper{
+    max-width:90% !important;
+}
+.kartica img:hover{
+	cursor: pointer;
+}
+.gumb{
+	background-color:#DBB9AE !important ;
+	border-color: lightgrey !important;
+	transition:0.3s !important;
+}
+.gumb:hover{
+	opacity:0.8;
+	cursor:pointer;
+}
+.gumb:after {
+	content:url("../img/kosarica1.png");
+	position: absolute;
+	opacity: 0;  
+	top: 14px;
+	right: -20px;
+	transition: 0.5s;
+  }
+/*
+@media screen and (max-width: 1416px) {
+
+	nav{
+		width:100%;
+	}
+    #proizvodi,#onama,#logo,#kontakt,#blog,#kosarica{
+        width: 100%;
+        text-align: center;
+    }
+	.navlink li, .navlink a,.navlink ul{
+		padding:0;
+	}
+	#cart{
+		display: none;
+	}
+	nav ul{
+		display: flex;
+		flex-flow: column;
+		width:50%;
+	}
+	#proizvodi{
+		order:6;
+	}
+	#logo{
+		order:1;
+		width:100%;
+	}
+	#kosarica{
+		order:2;
+	}
+	#onama{
+		order:3;
+	}
+	#kontakt{
+		order:4;
+	}
+	#blog{
+		order:5;
+	}
+
+
+  }*/
+  @media screen and (max-width: 992px) {
+		#torteSlika{
+			padding-right: 0%;
+			width:100%;
+			margin-bottom: 3%;
+		}
+		#slatkoSlika{
+			padding-right: 0%;
+			width:100%;
+			margin-bottom: 3%;
+		}
+		#slanoSlika{
+			width: 100%;
+			margin-bottom: 3%;
+		}
+		.kolona{
+			padding-left: 5% !important;
+			padding-right: 5% !important;
+			margin-top:5%;
+		}
+		
+		#torte,#slatko,#slano{
+			-webkit-transition: .3s ease-in-out;
+			transition: .3s ease-in-out;
+		}
+		#torte:hover,#slatko:hover,#slano:hover{
+			opacity: 0.8;
+		}
+		
+  }
+
+  @media screen and (max-width: 1416px) {
+
+	.desktopNav{
+		display: none;
+
+	}
+	.mobileNav{
+		display: block;
+		overflow:visible;
+	}
+  }
+  
+
+  button {
+	border-radius: 4px;
+	background-color: #DBB9AE;
+	border: 1px solid lightgray;
+	color: black;
+	text-align: center;
+	font-size: 32px;
+	padding: 16px;
+	width: 80%;
+	transition: all 0.5s;
+	cursor: pointer;
+  }
+  
+  button{
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+  }
+  
+  button:after {
+	content:url("../img/kosarica1.png");
+	position: absolute;
+	opacity: 0;  
+	top: 14px;
+	right: -20px;
+	transition: 0.5s;
+  }
+  
+  button:hover{
+	padding-right: 24px;
+	padding-left:8px;
+  }
+  
+  button:hover:after {
+	opacity: 1;
+	right: 10px;
+  }
