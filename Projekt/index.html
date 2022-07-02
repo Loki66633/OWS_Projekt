@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 <html lang="hr">
 	<head>
@@ -9,8 +10,9 @@
     <link rel="icon" type="image/x-icon" href="/img/meetMia.ico">
 
 		<title>MeetMia</title>
-
+    <link href="css/general.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -28,13 +30,13 @@
 
       <nav class="desktopNav">
           <ul class="navLink" id="myTopnav">
-              <li id="proizvodi"><a href="proizvodi.html" >Proizvodi</a></li>
-              <li id="onama"><a href="#O nama" >O nama</a></li>
-              <li id="blog"><a href="#Novosti" >Novosti</a></li>
-              <li id="logo" onclick="location.href = 'index.html'"><img id="logoImg" src="img/meetMia.png" alt="logo" ></li>
-              <li id="kontakt"><a href="kontakt.html" >Kontakt</a></li>
-              <li id="kosarica"><a href="narudzba.html" >Košarica <i id="hide" class="fas fa-shopping-cart"></i></a></li>
-              <li id="shoppingCart" onclick="location.href = 'narudzba.html'"><img id="cart" src="img/cart.png" alt="shopping cart"> </li>
+            <li id="proizvodi"><a href="proizvodi.html" >Proizvodi</a></li>
+            <li id="onama"><a href="onama.html" >O nama</a></li>
+            <li id="blog"><a href="#Novosti" >Novosti</a></li>
+            <li id="logo" onclick="location.href = 'index.html'"><img id="logoImg" src="img/meetMia.png" alt="logo" ></li>
+            <li id="zaposli"><a href="#" >Zapošljavanje</a></li>
+            <li id="kontakt"><a href="kontakt.html" >Kontakt</a></li>
+            <li id="shoppingCart" onclick="location.href = 'narudzba.html'"><img id="cart" src="img/cart.png" alt="shopping cart"> </li>
           </ul>
         </nav>
 
@@ -45,13 +47,16 @@
   
   <main class="mobileNav">
     <div id="overlay">
-      <a href="#">Link1</a>
-      <a href="#">Link2</a>
-      <a href="#">Link3</a>
-      <a href="#">Link4</a>
+      <div class="drop"><a href="#">A</a></div>
+      <div class="drop"><a href="proizvodi.html">Proizvodi <i class="fas fa-utensils"></i></a></div>
+      <div class="drop"><a href="narudzba.html">Košarica <i class="fas fa-shopping-cart"></i> </a></div>
+      <div class="drop"><a href="onama.html">O nama <i class="far fa-id-card"></i></a></div>
+      <div class="drop"><a href="kontakt.html">Kontakt <i class="fas fa-map-marked-alt"></i></a></div>
+      <div class="drop"><a href="#">Novosti <i class="far fa-newspaper"></i> </a></div>
+      <div class="drop"><a href="#">Zapošljavanje <i class="fas fa-people-carry"></i> </a></div>
     </div>
     <div class="nav">
-      <div class="logo1" onclick="location.href = 'index.html'" ></div>
+      <div class="logo1" onclick="location.href = 'index.html'" ><img src="img/meetMia.png" height="125px" alt="logo"></div>
       <div id="hamburger" class="indeks">
         <div class="indeks"></div>
       </div>
@@ -82,25 +87,25 @@
   <!--PONUDA-->
       <div class="container-fluid pocetno">
       <div class="row ponuda">
-        <div class="col-lg-4 kolona col-md-12 text-center" id="torte">
+        <div class="col-lg-4 kolona col-md-12 text-center" id="torte" onclick="location.href = 'proizvodiTorte.html'">
           <picture class="slikeWide">
             <source media="(max-width:992px)" srcset="img/torteWide.png" >
-            <img class="triSlike img-fluid" id="torteSlika" src="img/torte.png">
+            <img class="triSlike img-fluid" id="torteSlika" src="img/torte.png" alt="torte">
           </picture>
           <a>Torte</a>
         </div>
-        <div class="col-lg-4 kolona col-md-12  text-center" id="slatko">
+        <div class="col-lg-4 kolona col-md-12  text-center" id="slatko" onclick="location.href = 'proizvodiSlatko.html'">
 
           <picture class="slikeWide">
             <source media="(max-width:992px)" srcset="img/slatkoWide.png" >
-            <img class="triSlike img-fluid" id="slatkoSlika" src="img/slatko.png">
+            <img class="triSlike img-fluid" id="slatkoSlika" src="img/slatko.png" alt="slatko">
           </picture>
           <a>Slatko</a>
         </div>
-        <div class="col-lg-4 kolona col-md-12 text-center" id="slano">
+        <div class="col-lg-4 kolona col-md-12 text-center" id="slano" onclick="location.href = 'proizvodiSlano.html'">
           <picture class="slikeWide">
             <source media="(max-width:992px)" srcset="img/slanoWide.png" class="wide">
-            <img class="triSlike img-fluid" id="slanoSlika" src="img/slano.png">
+            <img class="triSlike img-fluid" id="slanoSlika" src="img/slano.png" alt="slano">
           </picture>
           <a>Slano</a>
         </div>
@@ -115,66 +120,65 @@
     <div class="container-fluid najprodavanije">
     <ul id="light-slider">
       <li>
-        <div class="kartica">
+        <div class="kartica" onclick="location.href = 'proizvod.html'">
           <div class="najprodavanijiSlika">
-            <img src="img/proizvodi/najprod1.png">
+            <img src="img/proizvodi/najprod1.png" alt="najprodavanije">
         </div>
           <h3>Čokoladni tiramisu</h3>
           <p>15,00kn</p>
         </div>
       </li>
       <li>
-        <div class="kartica">
+        <div class="kartica" onclick="location.href = 'proizvod.html'">
           <div class="najprodavanijiSlika">
-            <img src="img/proizvodi/najprod2.png">
+            <img src="img/proizvodi/najprod2.png" alt="najprodavanije">
         </div>
           <h3>Croissant marelica</h3>
           <p>20,00kn</p>
         </div>
       </li>
-      </li>
 
       <li>
-        <div class="kartica">
+        <div class="kartica" onclick="location.href = 'proizvod.html'">
           <div class="najprodavanijiSlika">
-              <img src="img/proizvodi/najprod3.jpg">
+              <img src="img/proizvodi/najprod3.jpg" alt="najprodavanije">
         </div>
           <h3>Croissant pistacija</h3>
           <p>22,00kn</p>
         </div>
       </li>
-    </li>
+
 
     <li>
-      <div class="kartica">
+      <div class="kartica" onclick="location.href = 'proizvod.html'">
         <div class="najprodavanijiSlika">
-          <img src="img/proizvodi/najprod4.png">
+          <img src="img/proizvodi/najprod4.png" alt="najprodavanije">
       </div>
         <h3>Queen Niki</h3>
         <p>25,00kn</p>
       </div>
     </li>
-  </li>
+
 
   <li>
-    <div class="kartica">
+    <div class="kartica" onclick="location.href = 'proizvod.html'">
       <div class="najprodavanijiSlika">
-        <img src="img/proizvodi/najprod5.png">
+        <img src="img/proizvodi/najprod5.png" alt="najprodavanije">
     </div>
       <h3>Karamel eclair</h3>
       <p>15,00kn</p>
     </div>
-  </li>>
+
 </li>
 <li>
-  <div class="kartica">
+  <div class="kartica" onclick="location.href = 'proizvod.html'">
     <div class="najprodavanijiSlika">
-      <img src="img/proizvodi/najprod6.png">
+      <img src="img/proizvodi/najprod6.png" alt="najprodavanije">
   </div>
     <h3>Ruby eclair</h3>
     <p>12,00kn</p>
   </div>
-</li>>
+
 </li>
       
   </ul>
@@ -183,20 +187,25 @@
         $("#light-slider").lightSlider();
     });
     </script>
+
+  <div class="row justify-content-center">
+      <button class="btn btn-primary btn-sm gumb" onclick="location.href = 'proizvodi.html'" >Pogledaj sve proizvode</button>
+  </div>
     </div>
 
 <!--NAJPRODAVANIJE-->
-<hr>
+
 
 <!--O NAMA-->
-<br>
 <div class="container-fluid onamaWrap">
+  <hr>
+  <br>
   <div class="row">
-    <div class="col-lg-6">
-      <img class="img-fluid" id="onamaSlika" src="img/meet-mia.jpg">
+    <div class="col-xl-6 col-lg-12">
+      <img class="img-fluid" id="onamaSlika" src="img/meet-mia.jpeg" alt="mia">
     </div>
 
-    <div class="col-lg-6">
+    <div class="col-xl-6 col-lg-12 razmak">
       <h2>O nama</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vulputate tempus augue, eget finibus arcu condimentum semper. Etiam egestas tempus bibendum. Nullam pharetra sollicitudin dolor, ut lobortis ante consectetur ac. 
         Proin viverra elit eros, eget iaculis urna sollicitudin nec.
@@ -206,6 +215,9 @@
         Quisque auctor ligula vel ullamcorper maximus. Aenean vel accumsan velit. 
         Integer et tempor diam. Aliquam blandit risus vitae ante rhoncus, 
         vel molestie sapien fermentum.</p>
+
+
+        <button class="btn gumb" id="oNamaGumb" style="width: 50%;" onclick="location.href = 'onama.html'">Više o nama</button>
     </div>
   </div>
 </div>
@@ -250,6 +262,9 @@
         </li>
         <li class="mb-1 radno">
           <a href="#!" style="color: #f0f0f0;">Lokacije</a>
+        </li>
+        <li class="mb-1 radno">
+          <a href="#!" style="color: #f0f0f0;">Zapošljavanje</a>
         </li>
       </ul>
     </div>

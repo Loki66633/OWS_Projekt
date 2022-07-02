@@ -1,0 +1,54 @@
+
+.breadWrap{
+	margin:0 auto;
+	width:375px;
+	font-size: 20px;
+	text-align: center;
+}
+#kolicina{
+    width:70px;
+    display: inline;
+    margin-bottom: 20px;
+    height:30px;
+}
+.kol{
+    display: inline;
+}
+.gumb{
+background-color: #DBB9AE !important;
+	color:black !important;
+	border:none !important;
+	transition: 0.3s !important;
+
+}
+.dole{
+    position: absolute !important;
+    bottom:   0 !important;
+    width: 100%;
+}
+.gumb:focus{
+	box-shadow: 0 0 0 0.2rem rgba(133, 65, 10, 0.356)!important;
+}
+.gumb:hover{
+    opacity:0.8;
+}
+.slikaProizvod{
+    text-align: center;
+}
+#slano,#proizvodi1{
+    transition: 0.3s;
+    border-bottom: 1px solid transparent;
+}
+#slano:hover,#proizvodi1:hover{
+    cursor: pointer;
+    border-bottom: 1px solid darkgrey;
+}
+
+@media screen and (max-width: 1200px) {
+    .opis{
+        margin-top:30px;
+    }
+    .dole{
+        position:  relative !important;
+    }
+}

@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+
+#logoImg{
+	transition:0.4s
+}
+#logoImg:hover{
+	opacity:0.7;
+} 
+.mobileNav{
+	display: none;
+}
+.logo1 img{
+	transition: 0.3s;
+
+}
+.logo1 img:hover{
+	opacity: 0.7;
+	cursor: pointer;
+}
+*{
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+
+}
+ul{
+	margin-bottom: 0;
+}
+
+nav{
+    margin: 0 auto;
+}
+li a {
+	font-size:30px;
+	text-decoration: none !important;
+	color:#F9FFFF !important;
+}
+
+.radno a {
+	padding: 0;
+	font-size: 15px;
+}
+.listaFooter li{
+	padding:0;
+	font-size:15px;
+}
+footer{
+	background-color:#AE8686 !important;
+}
+.fab{
+	font-size: 45px;
+	margin-right: 20px;
+	padding-top: 0;
+	padding-bottom: 0;
+	cursor: pointer;
+	transition: 0.3s;
+}
+.fab:hover{
+	opacity: 0.8;
+}
+.p-3 p{
+	color: lightgrey;
+}
+.radno a {
+	padding: 0;
+	font-size: 15px;
+}
+.listaFooter li{
+	padding:0;
+	font-size:15px;
+}
+footer{
+	background-color:#AE8686 !important;
+}
+nav ul{
+	padding-left: 0px !important;
+}
+#cart{
+	transition: 0.4s;
+}
+#cart:hover{
+	opacity: 0.5;
+}
+#logoImg,#cart{
+	height:105px;
+	cursor: pointer;
+	vertical-align: bottom !important;
+}
+#logo{
+	padding:10px
+}
+#cart{
+	height: 45px;
+	margin-left: 20px;
+	margin-top: 25px;
+}
+header{
+	background-color:#8F5151 ;
+	display:flex !important; 
+	justify-content: left !important;
+	align-items: stretch !important;
+}
+#proizvodi,#onama,#logo,#kontakt,#kosarica{
+    width: 200px;
+    text-align: center;
+}
+.navLink{
+	list-style: none;
+	margin:0 auto;
+}
+.navLink li,button{
+	display:inline-block;
+}
+.navLink li{
+	font-size:30px;
+	text-decoration: none !important;
+	color:#F9FFFF !important;
+} 
+
+.navLink li a{
+	transition: all 0.3s ease 0s;
+	border-bottom: 2px solid transparent;
+}
+
+.navLink li a:hover{
+	border-color:#dabcbc ;
+}
+nav{
+	margin:0 auto;
+}
+@media screen and (max-width: 1252px) {
+
+	.desktopNav{
+		display: none;
+
+	}
+	.mobileNav{
+		display: block;
+		overflow:visible;
+	}
+    .drop{
+        width:100% !important;
+    }
+  }
+  
+  
+  .nav {
+	width: 100%;
+	background-color: #8F5151;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: sticky;
+	top: 0;
+	z-index: 102;
+	height:10%;
+
+  }
+  
+  .logo1,
+  #hamburger {
+	margin-left: 4%;
+	margin-right: 4%;
+  }
+  
+  #hamburger {
+	opacity: 0.75;
+	cursor: pointer;
+	transition: opacity 0.25s linear;
+	width: clamp(3rem, 3vw + 1.7rem, 8rem);
+	height: clamp(5rem, 3.4vw + 2.7rem, 10rem);
+	display: flex;
+	align-items: center;
+	z-index: 200;
+  }
+  #hamburger:hover {
+	opacity: 1;
+  }
+  
+  #hamburger div,
+  #hamburger div:after,
+  #hamburger div:before {
+	background-color: #fafafa;
+	border-radius: 10px;
+	width: clamp(1.5rem, 2vw + 1.1rem, 6rem);
+	height: clamp(0.2rem, 0.3vw + 0.1rem, 0.8rem);
+	transition: all 0.15s linear;
+  }
+  
+  #hamburger div:before,
+  #hamburger div:after {
+	content: "";
+	position: absolute;
+  }
+  
+  #hamburger div:before {
+	transform: translateY(-200%);
+  }
+  
+  #hamburger div:after {
+	transform: translateY(200%);
+  }
+  
+  #hamburger.open div {
+	background: transparent;
+  }
+  
+  #hamburger.open div:before {
+	transform: rotate(45deg);
+  }
+  
+  #hamburger.open div:after {
+	transform: rotate(-45deg);
+  }
+  
+  #overlay {
+	width: 100%;
+	position: absolute;
+	background-color: #c79494;
+	z-index: 101;
+	transform: translateY(-100%);
+	transition: all 0.5s ease-in-out;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items:center;
+	opacity:0.9;
+	overflow: visible;
+  }
+  #overlay a{
+	  opacity:1 !important;
+	  height:125px;
+  }
+  
+  #overlay.menu {
+	transform: translateY(0%);
+  }
+  
+  #overlay a {
+	text-decoration: none;
+	color: #fafafa;
+	margin: 2%;
+	opacity: 0.5;
+  }
+  
+  #overlay a:hover {
+	opacity: 1;
+  }
+  .drop{
+	  height:125px;
+	  width:50%;
+	  text-align: center;
+  }
+  .drop a{
+	text-align: center;
+	vertical-align: middle;
+	line-height: 125px;  
+	width:100%;
+	font-size: 36px !important;
+	border-bottom: 2px solid transparent;
+	transition: 0.4s;
+  }
+  .drop a:hover{
+	  text-decoration: none !important;
+	  opacity:0.9;
+	  border-color: white;
+  }
+  @media screen and (max-width: 660px){
+	#overlay {
+		opacity:1;
+  }
+}

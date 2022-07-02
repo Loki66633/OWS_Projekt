@@ -1,34 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
-
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
-
-/*----------------------------------------------------*/
-
-#hide{
-	display: none;
-}
-#logoImg,#cart{
-	height:105px;
-	cursor: pointer;
-	vertical-align: bottom !important;
-}
-#cart{
-	transition: 0.4s;
-}
-#cart:hover{
-	opacity: 0.5;
-}
-#logo{
-	padding:10px
-}
-.navLink li{
-	font-size:30px;
-	text-decoration: none !important;
-	color:#F9FFFF !important;
-} 
 
 *{
 	box-sizing: border-box;
@@ -50,68 +20,7 @@ body{
 	padding-left: 0 !important;
 	padding-right: 0 !important;
 }
-#cart{
-	height: 45px;
-	margin-left: 20px;
-	margin-top: 25px;
-}
-header{
-	background-color:#8F5151 ;
-	display:flex !important; 
-	justify-content: left !important;
-	align-items: stretch !important;
-}
-ul{
-	margin-bottom: 0;
-}
-#proizvodi,#onama,#logo,#kontakt,#blog,#kosarica,#shoppingCart{
-    width: 185px;
-    text-align: center;
-}
-nav{
-    margin: 0 auto;
-}
-li a {
-	font-size:30px;
-	text-decoration: none !important;
-	color:#F9FFFF !important;
-}
-.navLink{
-	list-style: none;
-	margin:0 auto;
-}
-.navLink li,button{
-	display:inline-block;
-}
 
-.navLink li a{
-	transition: all 0.3s ease 0s;
-	border-bottom: 2px solid transparent;
-}
-
-.navLink li a:hover{
-	border-color:#dabcbc ;
-}
-#cart{
-	margin-bottom:15px;
-}
-.radno a {
-	padding: 0;
-	font-size: 15px;
-}
-.listaFooter li{
-	padding:0;
-	font-size:15px;
-}
-footer{
-	background-color:#AE8686 !important;
-}
-.fab{
-	font-size: 45px;
-	padding:20px;
-	padding-top: 0;
-	padding-bottom: 0;
-}
 .checkout{
     background-color: #DBB9AE !important;
 	color:black !important;
@@ -123,59 +32,9 @@ footer{
 .checkout:hover{
 	opacity:0.8
 }
+.checkout:focus{
+	box-shadow: 0 0 0 0.2rem rgba(133, 65, 10, 0.356)!important;
+}
 nav ul{
 	padding-left: 0px !important;
 }
-#logoImg{
-	transition:0.4s
-}
-#logoImg:hover{
-	opacity:0.7;
-}
-.proizvod{
-	border:1px solid red;
-}
-@media screen and (max-width: 1416px) {
-	#hide{
-        display: inline;
-    }
-	nav{
-		width:100%;
-	}
-    #proizvodi,#onama,#logo,#kontakt,#blog,#kosarica{
-        width: 100%;
-        text-align: center;
-    }
-	.navlink li, .navlink ul{
-		padding:0;
-	}
-	#cart{
-		display: none;
-	}
-	nav ul{
-		display: flex;
-		flex-flow: column;
-		width:50%;
-	}
-	#proizvodi{
-		order:6;
-	}
-	#logo{
-		order:1;
-	}
-	#kosarica{
-		order:2;
-	}
-	#onama{
-		order:3;
-	}
-	#kontakt{
-		order:4;
-	}
-	#blog{
-		order:5;
-	}
-	#kosarica{display:block;}
-
-
-  }

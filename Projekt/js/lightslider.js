@@ -43,7 +43,7 @@
               }
         },
         {
-            breakpoint:991,
+            breakpoint:1042,
             settings: {
                 item:2,
               }

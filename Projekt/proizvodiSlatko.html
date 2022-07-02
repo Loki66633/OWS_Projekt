@@ -50,34 +50,33 @@
            
          </div>
        </main>
-      <script>(() => {
-        const hamburger = document.getElementById("hamburger");
-        const menu = document.getElementById("overlay");
-        let open = false;
-      
-        const change = () => {
-          if (!open) {
-            hamburger.classList.add("open");
-            menu.classList.add("menu");
-          } else {
-            hamburger.classList.remove("open");
-            menu.classList.remove("menu");
-          }
-          open = !open;
-        };
-      
-        hamburger.addEventListener("click", change);
-      })();</script>
-
+       <script>(() => {
+         const hamburger = document.getElementById("hamburger");
+         const menu = document.getElementById("overlay");
+         let open = false;
+       
+         const change = () => {
+           if (!open) {
+             hamburger.classList.add("open");
+             menu.classList.add("menu");
+           } else {
+             hamburger.classList.remove("open");
+             menu.classList.remove("menu");
+           }
+           open = !open;
+         };
+       
+         hamburger.addEventListener("click", change);
+       })();</script>
       <br>
       <div class="container-fluid proizvodiWrapper">
-         <p class="bread">Proizvodi / Svi proizvodi</p>
+         <p class="bread">Proizvodi / Slatko</p>
          <hr>
         <div class="lijevo">
           <h3>Filter:</h3>
-          <button type="button" class="btn btn-outline-primary btn-lg filter active" >Sve</button>
+          <button type="button" class="btn btn-outline-primary btn-lg filter" onclick="location.href = 'proizvodi.html'">Sve</button>
           <button type="button" class="btn btn-outline-primary btn-lg filter" onclick="location.href = 'proizvodiTorte.html'">Torte</button>
-          <button type="button" class="btn btn-outline-primary btn-lg filter" onclick="location.href = 'proizvodiSlatko.html'">Slatko</button>
+          <button type="button" class="btn btn-outline-primary active btn-lg filter">Slatko</button>
           <button type="button" class="btn btn-outline-primary btn-lg filter" onclick="location.href = 'proizvodiSlano.html'">Slano</button>
           <br>
       </div> 
@@ -91,27 +90,27 @@
         </select>
       </div>
       <div class="clear"></div>
-        <hr>
+      <hr>
         <div class="row">
-         <div class="col-lg-3 col-md-6 kartica">
+          <div class="col-lg-3 col-md-6 kartica">
             <div class="card" >
-               <div class="over" onclick="location.href = 'proizvod.html'">
-               <img class="card-img-top" src="img/proizvodi/slano.png" alt="Card image cap">
+               <div class="over"onclick="location.href = 'proizvod.html'">
+               <img class="card-img-top" src="img/proizvodi/najprod1.png" alt="Card image cap">
                </div>
                <div class="card-body">
-                 <h3>Breakfast Croissant</h3>
-                 <p class="card-text">18,00kn</p>
+                 <h3>Čokoladni tiramisu</h3>
+                 <p class="card-text">15,00kn</p>
                  <a class="btn btn-primary gumb">Dodaj u košaricu</a>
                </div>
             </div>
          </div>
             <div class="col-lg-3 col-md-6 kartica">
                <div class="card" >
-                  <div class="over" onclick="location.href = 'proizvod.html'">
-                  <img class="card-img-top" src="img/proizvodi/cokolada.jpg" alt="Card image cap">
+                  <div class="over"onclick="location.href = 'proizvod.html'">
+                  <img class="card-img-top" src="img/proizvodi/najprod5.png" alt="Card image cap">
                   </div>
                   <div class="card-body">
-                    <h3>Čoko Bomba</h3>
+                    <h3>Karamel Enclair</h3>
                     <p class="card-text">17,00kn</p>
                     <a class="btn btn-primary gumb">Dodaj u košaricu</a>
                   </div>
@@ -119,7 +118,7 @@
             </div>
             <div class="col-lg-3 col-md-6 kartica">
                <div class="card" >
-                  <div class="over" onclick="location.href = 'proizvod.html'">
+                  <div class="over"onclick="location.href = 'proizvod.html'">
                   <img class="card-img-top" src="img/proizvodi/jagoda.png" alt="Card image cap">
                   </div><div class="card-body">
                     <h3>Jagoda Enclair</h3>
@@ -128,14 +127,13 @@
                   </div>
                </div>
             </div>
-
             <div class="col-lg-3 col-md-6 kartica">
                <div class="card" >
-                  <div class="over" onclick="location.href = 'proizvod.html'">
-                  <img class="card-img-top" src="img/proizvodi/bagel1.png" alt="Card image cap">
+                  <div class="over"onclick="location.href = 'proizvod.html'">
+                  <img class="card-img-top" src="img/proizvodi/cokolada.jpg" alt="Card image cap">
                  </div> <div class="card-body">
-                    <h3>Veggie Bagel</h3>
-                    <p class="card-text">11,00kn</p>
+                    <h3>Čoko Fantazija</h3>
+                    <p class="card-text">15,00kn</p>
                     <a class="btn btn-primary gumb">Dodaj u košaricu</a>
                   </div>
                </div>
@@ -144,28 +142,8 @@
          <br>
          <div class="row">
             <div class="col-lg-3 col-md-6 kartica">
-                <div class="card" ><div class="over" onclick="location.href = 'proizvod.html'">
-                   <img class="card-img-top" src="img/proizvodi/najprod2.png" alt="Card image cap">
-                   </div><div class="card-body">
-                     <h3>Croissant marelica</h3>
-                     <p class="card-text">20,00kn</p>
-                     <a class="btn btn-primary gumb">Dodaj u košaricu</a>
-                   </div>
-                </div>
-             </div>
-             <div class="col-lg-3 col-md-6 kartica">
-                <div class="card" ><div class="over" onclick="location.href = 'proizvod.html'">
-                   <img class="card-img-top" src="img/proizvodi/losos.jpg" alt="Card image cap">
-                   </div><div class="card-body">
-                     <h3>Losos Bagel</h3>
-                     <p class="card-text">17,00kn</p>
-                     <a class="btn btn-primary gumb">Dodaj u košaricu</a>
-                   </div>
-                </div>
-             </div>
-            <div class="col-lg-3 col-md-6 kartica">
                <div class="card">
-                  <div class="over" onclick="location.href = 'proizvod.html'">
+                  <div class="over"onclick="location.href = 'proizvod.html'">
                   <img class="card-img-top img-responsive" src="img/proizvodi/najprod6.png " alt="Card image cap">
                   </div><div class="card-body">
                     <h3>Ruby Eclair</h3>
@@ -176,16 +154,35 @@
             </div>
             <div class="col-lg-3 col-md-6 kartica">
                <div class="card" >
-                  <div class="over" onclick="location.href = 'proizvod.html'">
-                  <img class="card-img-top" src="img/proizvodi/torta1.png" alt="Card image cap">
+                  <div class="over"onclick="location.href = 'proizvod.html'">
+                  <img class="card-img-top" src="img/proizvodi/najprod4.png" alt="Card image cap">
                   </div><div class="card-body">
-                    <h3>Šumska Torta</h3>
+                    <h3>Queen Niki</h3>
                     <p class="card-text">25,00kn</p>
                     <a class="btn btn-primary gumb">Dodaj u košaricu</a>
                   </div>
                </div>
             </div>
-
+            <div class="col-lg-3 col-md-6 kartica">
+               <div class="card" ><div class="over"onclick="location.href = 'proizvod.html'">
+                  <img class="card-img-top" src="img/proizvodi/berry.jpg" alt="Card image cap">
+                  </div><div class="card-body">
+                    <h3>Berry Basil</h3>
+                    <p class="card-text">17,00kn</p>
+                    <a class="btn btn-primary gumb">Dodaj u košaricu</a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-6 kartica">
+               <div class="card" ><div class="over"onclick="location.href = 'proizvod.html'">
+                  <img class="card-img-top" src="img/proizvodi/najprod2.png" alt="Card image cap">
+                  </div><div class="card-body">
+                    <h3>Croissant marelica</h3>
+                    <p class="card-text">20,00kn</p>
+                    <a class="btn btn-primary gumb">Dodaj u košaricu</a>
+                  </div>
+               </div>
+            </div>
          </div>
       </div>
       <br>

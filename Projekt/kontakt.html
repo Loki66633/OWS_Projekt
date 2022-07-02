@@ -7,6 +7,7 @@
     <link rel="icon" type="image/x-icon" href="/img/meetMia.ico">
 
     <link href="css/styleKontakt.css" rel="stylesheet">
+    <link href="css/general.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -19,19 +20,56 @@
         <!--NAVIGACIJA-->
         <header>
 
-          <nav>
-              <ul class="navLink">
-                  <li id="proizvodi"><a href="#O nama" >Proizvodi</a></li>
-                  <li id="onama"><a class="hover-underline-animation"href="#O nama" >O nama</a></li>
-                  <li id="blog"><a href="#Novosti" >Novosti</a></li>
-                  <li id="logo" onclick="location.href = 'index.html'"><img id="logoImg" src="img/meetMia.png" alt="logo" ></li>
-                  <li id="kontakt"><a id="kontaktLink" href="kontakt.html" >Kontakt</a></li>
-                  <li id="kosarica"><a href="narudzba.html" >Košarica <i id="hide" class="fas fa-shopping-cart"></i></a></li>
-                  <li id="shoppingCart" onclick="location.href = 'narudzba.html'"><img id="cart" src="img/cart.png" alt="shopping cart"> </li>
-              </ul>
-            </nav>
+          <nav class="desktopNav">
+            <ul class="navLink" id="myTopnav">
+              <li id="proizvodi"><a href="proizvodi.html" >Proizvodi</a></li>
+              <li id="onama"><a href="onama.html" >O nama</a></li>
+              <li id="blog"><a href="#Novosti" >Novosti</a></li>
+              <li id="logo" onclick="location.href = 'index.html'"><img id="logoImg" src="img/meetMia.png" alt="logo" ></li>
+              <li id="zaposli"><a href="#" >Zapošljavanje</a></li>
+              <li id="kontakt"><a href="kontakt.html" >Kontakt</a></li>
+              <li id="shoppingCart" onclick="location.href = 'narudzba.html'"><img id="cart" src="img/cart.png" alt="shopping cart"> </li>
+            </ul>
+          </nav>
+  
     
       </header>
+      <main class="mobileNav">
+        <div id="overlay">
+          <div class="drop"><a href="#">A</a></div>
+          <div class="drop"><a href="proizvodi.html">Proizvodi <i class="fas fa-utensils"></i></a></div>
+          <div class="drop"><a href="narudzba.html">Košarica <i class="fas fa-shopping-cart"></i> </a></div>
+          <div class="drop"><a href="onama.html">O nama <i class="far fa-id-card"></i></a></div>
+          <div class="drop"><a href="kontakt.html">Kontakt <i class="fas fa-map-marked-alt"></i></a></div>
+          <div class="drop"><a href="#">Novosti <i class="far fa-newspaper"></i> </a></div>
+          <div class="drop"><a href="#">Zapošljavanje <i class="fas fa-people-carry"></i> </a></div>
+        </div>
+        <div class="nav">
+          <div class="logo1" onclick="location.href = 'index.html'" ><img src="img/meetMia.png" height="125px" alt="logo"></div>
+          <div id="hamburger" class="indeks">
+            <div class="indeks"></div>
+          </div>
+          
+        </div>
+      </main>
+      <script>(() => {
+        const hamburger = document.getElementById("hamburger");
+        const menu = document.getElementById("overlay");
+        let open = false;
+      
+        const change = () => {
+          if (!open) {
+            hamburger.classList.add("open");
+            menu.classList.add("menu");
+          } else {
+            hamburger.classList.remove("open");
+            menu.classList.remove("menu");
+          }
+          open = !open;
+        };
+      
+        hamburger.addEventListener("click", change);
+      })();</script>
   <!--NAVIGACIJA-->
 <!--Section: Contact v.2-->
 <div class="container kontaktWrapper">
@@ -174,6 +212,9 @@
           </li>
           <li class="mb-1 radno">
             <a href="#!" style="color: #f0f0f0;">Lokacije</a>
+          </li>
+          <li class="mb-1 radno">
+            <a href="#!" style="color: #f0f0f0;">Zapošljavanje</a>
           </li>
         </ul>
       </div>

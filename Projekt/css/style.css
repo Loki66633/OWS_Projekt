@@ -1,101 +1,24 @@
 
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
-
-
-
-/*----------------------------------------------------*/
 #torteSlika{
 	padding-right: 1%;
 }
 #slatkoSlika{
 	padding-right: 1%;
 }
-#hide{
-	display: none;
-}
-#logoImg,#cart{
-	height:105px;
-	cursor: pointer;
-	vertical-align: bottom !important;
-}
-#cart{
-	transition: 0.4s;
-}
-#cart:hover{
-	opacity: 0.5;
-}
-#logo{
-	padding:10px;
-}
 .onamaWrap{
 	width:80% !important;
 }
 
-*{
-	box-sizing: border-box;
-	font-family: 'Montserrat', sans-serif;
-
-}
-#proizvodi,#onama,#logo,#kontakt,#blog,#kosarica,#shoppingCart{
-    width: 185px;
-    text-align: center;
-}
-nav{
-	margin:0 auto;
-}
 .pocetno{
 	padding-left: 0 !important;
 	padding-right: 0 !important;
 }
-#cart{
-	height: 45px;
-	margin-left: 20px;
-	margin-top: 25px;
-}
-header{
-	background-color:#8F5151 ;
-	display:flex !important; 
-	justify-content: left !important;
-	align-items: stretch !important;
-}
-ul{
-	margin-bottom: 0;
-}
-.navLink li{
-	font-size:30px;
-	text-decoration: none !important;
-	color:#F9FFFF !important;
-} 
-li a {
-	font-size:30px;
-	text-decoration: none !important;
-	color:#F9FFFF !important;
-}
 
-.navLink{
-	list-style: none;
-	margin:0 auto;
-}
-.navLink li,button{
-	display:inline-block;
-}
 
-.navLink li a{
-	transition: all 0.3s ease 0s;
-	border-bottom: 2px solid transparent;
-}
-
-.navLink li a:hover{
-	border-color:#dabcbc ;
-}
-#cart{
-	margin-bottom:15px;
-}
 .kolona{
 	padding:0 !important;
 	cursor: pointer;
-	font-size: 25px;
+	font-size: 32px;
 	padding-top:5px;
 	transition: all 0.3s ease 0s;
 	border-bottom: 2px solid transparent;
@@ -130,6 +53,7 @@ li a {
 }
 .kolona:hover{
 	border-color:#dabcbc ;
+	opacity:0.9;
 }
 
 #slatko:hover > #slatkoSlika{
@@ -163,23 +87,6 @@ li a {
 #onamaSlika{
 	margin: auto;    
     display: block;
-}
-.radno a {
-	padding: 0;
-	font-size: 15px;
-}
-.listaFooter li{
-	padding:0;
-	font-size:15px;
-}
-footer{
-	background-color:#AE8686 !important;
-}
-.fab{
-	font-size: 45px;
-	padding:20px;
-	padding-top: 0;
-	padding-bottom: 0;
 }
 nav ul{
 	padding-left: 0px !important;
@@ -219,57 +126,21 @@ nav ul{
 .najprodavanijiSlika{
 	overflow: hidden;
 }
-#logoImg{
-	transition:0.4s
+.gumb{
+	background-color:#dabcbc !important ;
+	border-color: lightgrey !important;
+	transition:0.3s !important;
+	margin: 0 auto;
+	margin-top:20px;
+	margin-bottom: 20px;
 }
-#logoImg:hover{
-	opacity:0.7;
-} 
-.mobileNav{
-	display: none;
-}/*
-@media screen and (max-width: 1416px) {
+.gumb:focus{
+	box-shadow: 0 0 0 0.2rem rgb(218, 188, 188)!important;
+}
+.gumb:hover{
+	opacity:0.8
+}
 
-	nav{
-		width:100%;
-	}
-    #proizvodi,#onama,#logo,#kontakt,#blog,#kosarica{
-        width: 100%;
-        text-align: center;
-    }
-	.navlink li, .navlink a,.navlink ul{
-		padding:0;
-	}
-	#cart{
-		display: none;
-	}
-	nav ul{
-		display: flex;
-		flex-flow: column;
-		width:50%;
-	}
-	#proizvodi{
-		order:6;
-	}
-	#logo{
-		order:1;
-		width:100%;
-	}
-	#kosarica{
-		order:2;
-	}
-	#onama{
-		order:3;
-	}
-	#kontakt{
-		order:4;
-	}
-	#blog{
-		order:5;
-	}
-
-
-  }*/
   @media screen and (max-width: 992px) {
 		#torteSlika{
 			padding-right: 0%;
@@ -301,115 +172,11 @@ nav ul{
 		
   }
 
-  @media screen and (max-width: 1416px) {
-
-	.desktopNav{
-		display: none;
-
-	}
-	.mobileNav{
-		display: block;
-		overflow:visible;
-	}
-  }
-  
-  
-  .nav {
-	width: 100%;
-	background-color: #8F5151;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	position: sticky;
-	top: 0;
-	z-index: 100;
-	height:10%;
-
-  }
-  
-  .logo1,
-  #hamburger {
-	margin: 4%;
-  }
-  
-  #hamburger {
-	opacity: 0.5;
-	cursor: pointer;
-	transition: opacity 0.25s linear;
-	width: clamp(1.5rem, 2vw + 1.1rem, 6rem);
-	height: clamp(2rem, 1.4vw + 1.7rem, 5rem);
-	display: flex;
-	align-items: center;
-	z-index: 200;
-  }
-  
-  #hamburger:hover {
-	opacity: 1;
-  }
-  
-  #hamburger div,
-  #hamburger div:after,
-  #hamburger div:before {
-	background-color: #fafafa;
-	border-radius: 10px;
-	width: clamp(1.5rem, 2vw + 1.1rem, 6rem);
-	height: clamp(0.2rem, 0.3vw + 0.1rem, 0.8rem);
-	transition: all 0.15s linear;
-  }
-  
-  #hamburger div:before,
-  #hamburger div:after {
-	content: "";
-	position: absolute;
-  }
-  
-  #hamburger div:before {
-	transform: translateY(-200%);
-  }
-  
-  #hamburger div:after {
-	transform: translateY(200%);
-  }
-  
-  #hamburger.open div {
-	background: transparent;
-  }
-  
-  #hamburger.open div:before {
-	transform: rotate(45deg);
-  }
-  
-  #hamburger.open div:after {
-	transform: rotate(-45deg);
-  }
-  
-  #overlay {
-	width: 75%;
-	position: absolute;
-	background-color: #c79494;
-	z-index: 101;
-	transform: translateY(-100%);
-	transition: all 0.5s ease-in-out;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	overflow: visible;
-  }
-  
-  #overlay.menu {
-	transform: translateY(0%);
-  }
-  
-  #overlay a {
-	text-decoration: none;
-	color: #fafafa;
-	font-size: clamp(1rem, 4.1vw + 0.2rem, 10rem);
-	margin: 2%;
-	opacity: 0.5;
-	transition: opacity 0.2s linear;
-  }
-  
-  #overlay a:hover {
-	opacity: 1;
+  @media screen and (max-width: 1200px) {
+	  .razmak{
+		  margin-top:20px;
+	  }
+	  #oNamaGumb{
+		  width: 100% !important;
+	  }
   }
